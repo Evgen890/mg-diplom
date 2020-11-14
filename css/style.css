@@ -1,0 +1,200 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+;focus,:active{outlinne:none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display:block;}
+html,body{height: 100%;width:100%;font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0; border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight: inherit;}
+/*----------------------*/
+@font-face {
+    font-family:"Open Sans", sans-serif;
+    src: url("../fonts/OpenSans-Bold.ttf") format("truetype"),
+         url("../fonts/OpenSans-Bold.woff") format("woff"),
+         url("../fonts/OpenSans-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Open Sans", sans-serif;
+    src: url("../fonts/OpenSans-Regular.ttf") format("truetype"),
+         url("../fonts/OpenSans-Regular.woff") format("woff"),
+         url("../fonts/OpenSans-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.header {
+    background-image: url("../images/banner-bg.jpg");  
+    background-size: cover; 
+    background-position: center center;
+    background-color:#000000;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header::before {
+    content: "";
+    background-color: #000000;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.6;
+}
+
+.header-container{
+    width: 1173px;
+    padding-top: 29px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.menu-list{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-link {
+    text-transform: uppercase;
+    font-style: 13px;
+    color:#ffffff;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+.menu-list-item:nth-child(n + 2) {
+    margin-left: 35px;
+}
+
+.header-description {
+    width: 679px;
+    font-size: 44px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 auto;
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 80px;
+    padding-bottom: 145px;
+}
+
+.trends {
+    padding-top: 58px;
+}
+.trends-heading {
+    margin-bottom: 28px;
+}
+
+.trends-news{
+    display: flex;
+}
+
+.trends-name {
+   text-align: center;
+   font-family: "Open Sans";
+   font-size: 20px;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+
+.trends-name::after {
+    content:"";
+    display: block;
+    width:66px;
+    height: 3px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 28px;
+    background-color: #b59f5b;
+    opacity: 0.4;
+}
+
+.trends-block {
+    background-image: url("../images/trend1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #000;
+    padding: 158px 21px 15px 22px;
+    width: 414px;
+    height: 320px;
+    position: relative;
+}
+.trends-block::before { 
+    content: "";
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.6;
+    
+ }
+
+ .trends-content {
+    border: 3px solid rgba(122, 109, 59, 0.6);
+    width: 371px;
+    height: 147px;
+    padding: 41px 100px 36px 36px;
+    position: relative;
+}
+
+.trends-items {
+    display: inline;
+}
+
+.trends-theme {
+    width: 235px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 19px;
+    padding-top: 7px;  
+}
+
+.trends-theme:hover {
+    color: #b59f5b;
+}
+
+.trends-link {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #b59f5b;
+    font-size: 14px;
+    padding-right: 15px;
+}
+.trends-link:hover {
+    text-decoration: underline;
+}
